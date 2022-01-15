@@ -1,0 +1,297 @@
+html{
+    scroll-behavior:smooth;
+}
+body{
+     font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+======== common css  =======
+========================== */
+
+.highlight{
+     color: rgb(117, 60, 221);
+}
+
+.container{
+     display: flex;
+     max-width: 1200px;
+     margin: 60px auto;
+     padding:0 30px;
+}
+.title-hed{
+     font-size: 24px;
+     line-height: 36px;
+}
+nav{
+     display: flex;
+     justify-content: space-between;
+     height: 55px;
+     align-items: center;
+ }
+ 
+ .navigation{
+     display: flex;
+ }
+ .navigation li{
+     list-style: none;
+     margin: 10px;
+ }
+ .navigation li a{
+     width: 24px;
+     height: 24px;
+     text-decoration: none;
+     color: rgb(117, 60, 221);
+     font-weight: 600;
+     padding: 15px 10px;
+ }
+ /*------- I just wanted to... ------*/
+
+ .navigation li a:hover{
+      text-decoration: underline;
+ }
+
+ /*------ I just wanted to.. ------*/
+
+
+/* -----------------------------------------
+--------- ...1st Section start... ----------
+--------------------------------------------*/
+
+#sec1{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.left-side-1-sec{
+     width: 580px;
+     height: 400px;
+     margin-right: 60px;
+}
+.left-side-1-sec h1{
+     font-weight: bold;
+     font-size: 52px;
+     line-height: 70px;
+     color: #3A3A3A;
+     padding-bottom: 20px;
+}
+.left-side-1-sec p{
+     padding-bottom: 20px;
+}
+.picture-1sec img{
+     width: 440px;
+     height: 415px;
+     margin-left: 60px;
+}
+.primary-button{
+     outline: 0;
+     border: 0;
+     padding: 5px 10px;
+     background-color: rgb(117, 60, 221);
+     border-radius: 40px;
+}
+.primary-button a{
+     font-size: 16px;
+     line-height: 24px;
+     padding: 0 13px;
+     text-decoration: none;
+     color: white;
+}
+
+/* Sponsers Section css */
+#top{
+     margin-top: 150px;
+}
+#bottom{
+     margin-top: 10px;
+     margin-bottom: 150px;
+}
+.spon-sec{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.sponsers{
+     display: flex;
+}
+.sponser{
+     flex: 10.33%;
+     padding-left: 60px;
+     padding-top: 40px;
+     padding-bottom: 20px;
+}
+/* Sponser section end */
+
+
+/* Products css start */
+
+.sec2-title{
+     font-family: 'Amatic SC', cursive;
+     font-size: 60px;
+     text-align: center;
+     margin-bottom: 90px;
+}
+.all-products{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     justify-items: center;
+     margin-left: 150px;
+     margin-right: 150px;
+}
+.product{
+     width: 330px;
+     height: 540px;
+     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+     border-radius: 5px;
+     margin-bottom: 30px;
+}
+.all-products .product-pic img{
+     width: 300px;
+     height: 256px;
+     margin: 15px
+}
+.under-pic{
+     display: flex;
+     flex-direction: column;
+     margin-left: 15px;
+}
+#nickname{
+     font-weight: 500;
+     font-size: 28px;
+     line-height: 40px;
+     margin-bottom: 6px;
+}
+.filled{
+     color: #FFC014;
+}
+.empty{
+     color: #AEAEAE;
+}
+.half-empty{
+     color: #FFC014;
+}
+button a{
+     outline: none;
+     text-decoration: none;
+     text-align: right;
+     color: rgb(117, 60, 221);
+}
+.see-more{
+     text-align: right;
+     margin-right: 190px;
+     font-size: 20px;
+     font-weight: 500;
+}
+.see-more a{
+     text-decoration: none;
+}
+.see-more a:hover{
+     color: orangered;
+}
+/* Product style css End */
+
+/* My Own Section starts */
+
+.last-sec{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 150px;
+}
+.iphn img{
+     width: 440px;
+     height: 520px;
+}
+.iphn-details{
+     width: 598px;
+     height: 224px;
+}
+.iphn-details h1{
+     font-size: 35px;
+     font-weight: 600;
+}
+/* My own section ends */
+
+/* footer */
+footer{
+     margin-top: 50px;
+     position: absolute;
+     width: 1340px;
+     height: 220px;
+     background: #0A0826;
+     text-align: center;
+     color: white;
+}
+.fab{
+     color: white;
+     margin: 0 3px;
+}
+
+/* responsive Css */
+
+/* tablet responsive */
+
+@media (min-width: 688px) and (max-width: 1024px) {
+     .all-products{
+          grid-template-columns: repeat(2, 1fr);
+     }
+     .left-side-1-sec h1{
+          font-size: 40px;
+     }
+     footer{
+     width: 100%;
+     }
+}
+
+/* mobile responsive */
+
+@media (max-width: 688px) {
+     .title-head{
+          text-align: center;
+          margin-left: 50px;
+     }
+     #sec1{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+     }
+     .picture-1sec img{
+          width: 257px;
+height: 257px;
+          text-align: center;
+          margin: 0;
+     }
+     .left-side-1-sec{
+          width: 80%;     
+          text-align: center;
+          order: 2;
+          margin: 0;
+     }
+     .left-side-1-sec h1{
+          margin-bottom: 2px;
+          padding-bottom: 2px;
+     }
+
+     .navigation{
+          display: none;
+     }
+     #sec2{
+          margin-top: 300px;
+     }
+     footer{
+          width: 100%;
+     }
+     .all-products{
+          grid-template-columns: repeat(1, 1fr);
+          margin: 0 20px;
+     }
+     .last-sec{
+          display: flex;
+          flex-direction: column;
+     }
+     .iphn-details{
+          text-align: center;
+          margin-bottom: 70px;
+     }
+
+}
