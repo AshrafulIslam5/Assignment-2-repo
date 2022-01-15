@@ -290,8 +290,9 @@ height: 257px;
           flex-direction: column;
      }
      .iphn-details{
+          width: 90%;
           text-align: center;
-          margin-bottom: 70px;
+          margin-bottom: 140px;
      }
 
 }
