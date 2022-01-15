@@ -135,15 +135,20 @@ nav{
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      justify-items: center;
-     margin-left: 150px;
-     margin-right: 150px;
+     margin-left: 10px;
+     margin-right: 10px;
 }
 .product{
      width: 330px;
      height: 540px;
      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-     border-radius: 5px;
+     border-radius: 10px;
+     margin-left: 10px;
      margin-bottom: 30px;
+}
+.product:hover{
+     transform: scale(1.1);
+     transition: transform 0.2s ease-in-out;
 }
 .all-products .product-pic img{
      width: 300px;
@@ -216,7 +221,7 @@ button a{
 footer{
      margin-top: 50px;
      position: absolute;
-     width: 1340px;
+     width: 99%;
      height: 220px;
      background: #0A0826;
      text-align: center;
@@ -237,6 +242,9 @@ footer{
      }
      .left-side-1-sec h1{
           font-size: 40px;
+     }
+     .left-side-1-sec{
+          margin-left: 40px;
      }
      footer{
      width: 100%;
@@ -292,7 +300,7 @@ height: 257px;
      .iphn-details{
           width: 90%;
           text-align: center;
-          margin-bottom: 140px;
+          margin-bottom: 120px;
      }
 
 }
